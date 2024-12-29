@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  club-api:
+    build:
+      context: .
+      target: run
+      args:
+        VERSION_PREFIX: 1.0.0.0
+        VERSION_SUFFIX: docker
+    ports:
+      - "8080:80"
+    environment:
+      DOTNET_ENVIRONMENT: docker
+      DB_CONNECTION_STRING: "Server=junction.proxy.rlwy.net;Database=railway;User=root;Password=UQxCcCAoIjCjPoEZUcFpWSyHVAeudlVg;Port=29725"
+      JWT_SECRET: "L1L48R3T0T3CN!C0@C4rlo5C1u8T3s72025"
+      JWT_ISSUER: "ClubAC"
+      JWT_AUDIENCE: "ClubUser"
+      JWT_AccessTokenExpirationMinutes: "15"
+      JWT_RefreshTokenExpirationDays: "7"
+    restart: always
+    networks:
+      - cleanwebapi_network
+networks:
+  cleanwebapi_network:
+    driver: bridge

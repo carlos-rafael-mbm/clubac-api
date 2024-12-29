@@ -1,0 +1,42 @@
+# Configuración de entorno y archivos temporales
+*.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos y carpetas de compilación
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.ide
+
+# Archivos de publicación y despliegue
+publish/
+out/
+
+# Archivos de paquetes y dependencias
+*.nuget/
+*.nupkg
+packages/
+*.snupkg
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos generados automáticamente por el sistema operativo
+*.DS_Store
+Thumbs.db
+
+# Archivos de respaldo
+*.bak
+*.swp
+*.tmp
+*.temp

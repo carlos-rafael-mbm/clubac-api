@@ -15,7 +15,7 @@ services:
       JWT_SECRET: "L1L48R3T0T3CN!C0@C4rlo5C1u8T3s72025"
       JWT_ISSUER: "ClubAC"
       JWT_AUDIENCE: "ClubUser"
-      JWT_AccessTokenExpirationMinutes: "15"
+      JWT_AccessTokenExpirationMinutes: "300"
       JWT_RefreshTokenExpirationDays: "7"
     restart: always
     networks:
